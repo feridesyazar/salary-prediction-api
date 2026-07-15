@@ -20,11 +20,11 @@
             min-height:100vh;
             display:flex;
             justify-content:center;
-            align-items:center;
+            align-items: flex-start;
             background: linear-gradient(135deg,#021B79,#0575E6,#00C6FF);
-            overflow:hidden;
+            overflow-y: auto;
             position:relative;
-            padding:20px;
+            padding: 40px 20px;
         }
 
         /* Background Glow Effects */
@@ -219,59 +219,59 @@
         </div>
 
         <h1 class="title">
-            Maaş Tahmin AI
+            Salary Prediction AI
         </h1>
 
         <p class="subtitle">
-            Yapay zeka modeli; tecrübe, yazılı sınav ve mülakat performansına göre tahmini maaş analizi yapar.
+            An AI-powered model that predicts salary based on experience, written exam score, and interview performance.
         </p>
 
         <form action="/predict" method="post">
 
             <div class="input-group">
                 <label for="tecrube">
-                    💼 Tecrübe (Yıl)
+                    💼 Experience (Years)
                 </label>
 
                 <input 
                     type="number" 
                     id="tecrube" 
                     name="tecrube" 
-                    placeholder="Örn: 5"
+                    placeholder="Example: 5"
                     required
                 >
             </div>
 
             <div class="input-group">
                 <label for="yazili">
-                    📝 Yazılı Sınav Notu
+                    📝 Written Exam Score
                 </label>
 
                 <input 
                     type="number" 
                     id="yazili" 
                     name="yazili" 
-                    placeholder="Örn: 85"
+                    placeholder="Example: 85"
                     required
                 >
             </div>
 
             <div class="input-group">
                 <label for="mulakat">
-                    🎤 Mülakat Puanı
+                    🎤 Interview Score
                 </label>
 
                 <input 
                     type="number" 
                     id="mulakat" 
                     name="mulakat" 
-                    placeholder="Örn: 90"
+                    placeholder="Example: 90"
                     required
                 >
             </div>
 
             <button type="submit" class="btn">
-                🚀 Maaşı Tahmin Et
+                🚀 Predict Salary
             </button>
 
         </form>
@@ -283,7 +283,7 @@
         <div class="result-box">
 
             <h2 class="result-title">
-                💰 Tahmini Maaş
+                💰 Estimated Salary
             </h2>
 
             <div class="prediction">
