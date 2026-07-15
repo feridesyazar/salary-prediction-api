@@ -22,7 +22,7 @@ def predict():
         mulakat = float(request.form["mulakat"])
 
         prediction = model.predict([[tecrube, yazili, mulakat]])
-        predicted_salary = round(float(prediction[0]), 2)
+        predicted_salary = round(float(prediction.ravel()[0]), 2)
 
         return render_template(
             "index.html",
