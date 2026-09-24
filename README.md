@@ -24,6 +24,11 @@ The trained regression model predicts an estimated salary using three input feat
 - Render
 - Hugging Face Spaces
 
+## Live Application
+
+- [Hugging Face Space](https://huggingface.co/spaces/ferides/salary-prediction-app)
+- [Live Application on Render](https://salary-prediction-b7r2.onrender.com)
+  
 ## Project Structure
 
 ```text
